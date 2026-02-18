@@ -49,15 +49,6 @@ If images aren't showing up, make sure the `assets/` folder is in the same direc
 
 ---
 
-## Known issues / things I'd improve
-
-- Clicking the cart icon multiple times adds duplicate entries instead of incrementing quantity — worth fixing in `script.js`
-- The layout uses absolute positioning in a few places which breaks on smaller screens — needs a responsive pass
-- `favorite.html` still says "Your Cart" in the `<h1>` — just a copy-paste leftover
-- All variables are global (no `let`/`const`) — was written quickly, could use a cleanup
-
----
-
 ## Built with
 
 - HTML & CSS (no frameworks)
