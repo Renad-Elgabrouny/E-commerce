@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites</title>
+  <script src="favorite.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background-color: #dccfcf;
+    }
+
+    .cart-title {
+      text-align: center;
+      color: #531B24;
+      font-size: 40px;
+      margin: 40px 0;
+    }
+
+    .cart-container {
+      padding: 0 60px;
+      text-align: center;
+    } 
+    .cart-card {
+      display: inline-block; 
+      vertical-align: top; 
+      background-color: #cbb1b1;
+      border-radius: 20px;
+      padding: 20px;
+      width: 260px;
+      margin: 0 20px 40px 20px; 
+      text-align: center;
+    }
+
+    .cart-card img {
+      width: 100%;
+      height: 250px;
+      border-radius: 15px;
+    }
+
+    .cart-card h3 {
+      color: #531B24;
+      margin: 12px 0 5px;
+    }
+
+    .cart-card p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #531B24;
+    }
+    .remove-btn {
+      margin-top: 10px;
+      background-color: rgba(216,187,187, 0.6);
+      color: #531B24;
+      border: none;
+      padding: 8px;
+      width: 100%;
+      border-radius: 15px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .remove-btn:hover {
+      background-color: #923544;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="cart-title">Your Cart</h1>
+  <div class="cart-container"></div>
+
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce</title>
+  <script src="script.js"></script>
+</head>
+<style>
+  body{
+    margin:0px;
+    background-color: #dccfcf;
+  }
+  .nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #531B24;
+    padding-top: 10px;
+    padding-left: 27px;
+
+
+  }
+  .container1{
+    background-color: #531B24;
+    height: 1200px;
+    padding:20px;
+    margin:0px;
+  }
+  .logo{
+    display: inline-block;
+  }
+  .logo img{
+    background-color: #F7F3F3;
+    border-radius: 50px;
+    height: 80px;
+    width:300px;
+    display: inline-block;
+  }
+  .options{
+    background-color:#c1a8a8 ;
+    border-radius: 40px;
+    display: inline-block;
+    width: 407px;
+    height: 81px;
+    position: absolute;
+    left:1060px;
+    top:7px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .option-nav{
+        padding-left: 0px;
+  }
+  .option-nav li{
+    display: inline-table;
+    margin:0px 23px;
+    cursor: pointer;
+    /* background-color: #dcd7d7;
+    padding: 6px;
+    border-radius:20px ; */
+  }
+  .option-nav li:hover{
+    color: #531B24;
+  }
+  .search input{
+    border:none;
+    position: absolute;
+    left:340px;
+    top: 30px;
+    padding: 10px;
+    width: 45%;
+    background-color: #e2d0d0;
+    border-radius: 15PX;
+  }
+
+  .group{
+    background-color: #cbb1b1;
+    color: #531B24; 
+    margin-top: 51px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    margin-right: 35px;
+    margin-left: 13px;
+    height: 500px;
+    position: relative;
+  }
+  .group1{
+    display: inline-block;
+    position: relative;
+    left:80px;
+    bottom:120px;
+  }
+  .group1 h1{
+    font-size: 45px;
+  }
+  .group1 p{
+    font-size: 18px;
+    margin-top: 70px;
+
+  }
+  .group2{
+    display: inline-block;
+    margin-left: 249px;
+  }
+  .group2 img{
+    height: 400px;
+    width:600px;
+    border-radius: 20px;
+    margin-top: 45px;
+    margin-left: 100px;
+  }
+  .data{
+   background-color: #a89292;
+   color: #531B24;
+   margin: 0px;
+   width: 100%;
+  }
+  .data table{
+    padding-left: 500px;
+
+  }
+  .childata{
+    padding: 5px;
+    padding-right: 70px;
+
+  }
+  .choose{
+    align-items: center;
+    color: #a89292;
+    margin-top: 51px;
+    margin-left: 135px;
+    margin-bottom: 49px;
+
+  }
+  .choose h1{
+    margin-left: 475px;
+  }
+.popular {
+  background-color: #dccfcf;
+  padding: 60px 20px;
+}
+
+.popular h1 {
+  text-align: center;
+  color: #531B24;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.products-table {
+  width: 100%;
+  border-spacing: 40px;
+}
+
+.products-table td {
+  background-color: #cbb1b1;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-img {
+  position: relative;
+}
+
+.product-img img:first-child {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.cart {
+  width: 30px;
+  position: absolute;
+  top: 200px;
+  right: 5px;
+  background-color: rgba(216,187,187, 0.6);
+  padding: 6px;
+  border-radius: 30%;
+  cursor: pointer;
+}
+.cart:hover , .heart:hover{
+  background-color: #923544;
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 26px;
+  background-color: rgba(216,187,187, 0.6);
+  padding: 2px 8px;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.brand {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #531B24;
+}
+
+.products-table h3 {
+  color: #531B24;
+  margin: 8px 0;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #531B24;
+}
+
+
+  
+</style>
+<body>
+  
+
+    <div class="nav-bar">
+      <div class="logo">
+      <img src="assets/logo.png"/>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="🔎Search with Items"/>
+      </div>
+      <div class="options">
+        <ul class="option-nav">
+          <li>Shop</li>
+          <li>Cart</li>
+          <li>Favourites</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container1">
+
+    <div class="group">
+      <div class="group1">
+        <h1>Scent is the Language <br/>of Memory.</h1>
+        <p>Handcrafted extraits de parfum designed to linger on skin <br/>and soul.Fins the signature that speaks for you.</p>
+      </div>
+      <div class="group2">
+        <img src="assets/IMG1.png"/>
+      </div>
+    </div>
+
+    <div class="data">
+      <table>
+        <tr>
+          <td class="childata">
+            <h1>24h</h1>
+            <p>Dispatch</p>
+          </td>
+          <td class="childata">
+            <h1>4.9/5</h1>
+            <p>Star Rating</p>
+          </td>
+          <td class="childata">
+            <h1>&nbsp;&nbsp;&nbsp;30%</h1>
+            <p>Oil Concentration</p>
+          </td>
+          <td class="childata">
+            <h1>10k+</h1>
+            <p>Bottles Sold</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="choose">
+      <h1>Why Choosing Us</h1>
+      <img src="assets/img2.png"/>
+    </div>
+  </div>
+
+  <div class="popular">
+  <h1>Popular Products</h1>
+
+  <table class="products-table">
+  <!-- <tr>
+    <td>
+      <div class="product-box">
+        <div class="product-img">
+          <img src="assets/item1.png">
+          <img src="assets/shopping-cart.png" class="cart">
+          <span class="heart">♡</span>
+        </div>
+        <p class="brand">Maison Francis Kurkdjian</p>
+        <h3>Baccarat Rouge 540</h3>
+        <p class="price">$135.00</p>
+      </div>
+    </td>
+
+    <td>
+      <div class="product-box">
+        <div class="product-img">
+          <img src="assets/item2.png">
+          <img src="assets/shopping-cart.png" class="cart">
+          <span class="heart">♡</span>
+        </div>
+        <p class="brand">Le Labo</p>
+        <h3>Santal 33</h3>
+        <p class="price">$120.00</p>
+      </div>
+    </td>
+
+    <td>
+      <div class="product-box">
+        <div class="product-img">
+          <img src="assets/item3.png">
+          <img src="assets/shopping-cart.png" class="cart">
+          <span class="heart">♡</span>
+        </div>
+        <p class="brand">Tom Ford</p>
+        <h3>Oud Wood</h3>
+        <p class="price">$110.00</p>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="product-box">
+        <div class="product-img">
+          <img src="assets/item4.png">
+          <img src="assets/shopping-cart.png" class="cart">
+          <span class="heart">♡</span>
+        </div>
+        <p class="brand">Byredo</p>
+        <h3>Gypsy Water</h3>
+        <p class="price">$150.00</p>
+      </div>
+    </td>
+
+    <td>
+      <div class="product-box">
+        <div class="product-img">
+          <img src="assets/item5.png">
+          <img src="assets/shopping-cart.png" class="cart">
+          <span class="heart">♡</span>
+        </div>
+        <p class="brand">Tom Ford</p>
+        <h3>Lost Cherry</h3>
+        <p class="price">$180.00</p>
+      </div>
+    </td>
+
+    <td>
+      <div class="product-box">
+        <div class="product-img">
+          <img src="assets/item6.png">
+          <img src="assets/shopping-cart.png" class="cart">
+          <span class="heart">♡</span>
+        </div>
+        <p class="brand">Armani</p>
+        <h3>My Way</h3>
+        <p class="price">$98.00</p>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="product-box">
+        <div class="product-img">
+          <img src="assets/item7.png">
+          <img src="assets/shopping-cart.png" class="cart">
+          <span class="heart">♡</span>
+        </div>
+        <p class="brand">Roja Parfums</p>
+        <h3>Elysium</h3>
+        <p class="price">$90.00</p>
+      </div>
+    </td>
+
+    <td>
+      <div class="product-box">
+        <div class="product-img">
+          <img src="assets/item8.png">
+          <img src="assets/shopping-cart.png" class="cart">
+          <span class="heart">♡</span>
+        </div>
+        <p class="brand">Gucci</p>
+        <h3>Bloom</h3>
+        <p class="price">$105.00</p>
+      </div>
+    </td>
+
+    <td>
+      <div class="product-box">
+        <div class="product-img">
+          <img src="assets/item9.png">
+          <img src="assets/shopping-cart.png" class="cart">
+          <span class="heart">♡</span>
+        </div>
+        <p class="brand">Neesh</p>
+        <h3>Luxe Hayat</h3>
+        <p class="price">$115.00</p>
+      </div>
+    </td>
+  </tr> -->
+</table>
+
+</div>
+
+
+  
+</body>
+</html>
